@@ -1,3 +1,81 @@
+// if Expression
+fun main(){
+  var isTuesday = true
+    
+  if (isTuesday) {
+    println("Take out the trash.")
+  }
+}
+
+// if/else Expression
+fun main() {
+  var saleHappening = false
+  var price: Int
+  
+  if (saleHappening) {
+    price = 12
+  } else {
+    price = 15
+  }
+  println("The total is $price dollars.")
+}
+
+// Comparison Operators
+fun main() {
+  var d20 = 13
+
+  if (d20 >= 17) {
+    println("The incantation works and the dragon is defeated.")
+  } else {
+    println("The incantation fails and the dragon wins.")
+  }
+}
+
+// Equality and Inequality Operators
+
+
+// else-if Expressions
+fun main() {
+  var rewardsPoints = 17
+  var memberType: String
+
+  if (rewardsPoints >= 50) {
+    memberType = "Platinum"
+  } else if (rewardsPoints >= 25) {
+    memberType = "Gold"
+  } else if (rewardsPoints >= 10) {
+    memberType = "Silver"
+  } else {
+    memberType = "Bronze"
+  }
+  println("You are a $memberType type member.")
+} 
+
+// Logical Operators
+fun main() {
+  var a = true
+  var b = false
+  var c = true
+  var d = false
+
+  if (a || b) {
+    println("Hoorah!")
+  }
+  
+  // This expression could also use ||
+  if (!b && c) {
+    println("Woohoo!")
+  }
+
+  if (a || d) {
+    println("Yay!")
+  }
+
+  if (!(!d && b)) {
+    println("Wow!")
+  }
+}
+
 // Order of Evaluation
 fun main() {
   var expressionValue: Boolean
